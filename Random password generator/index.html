@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+       <title>Random Password Generator</title>
+
+       <link rel="stylesheet" href="index.css">
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="header">
+                <span id="pw-display">Password Here</span>
+            </div>
+            <div class="body">
+                <div class="body-parts">
+                <label for="length" id="pw-length">Password Length</label>
+                <input type="number" min="8" max="30" id="length">
+            </div>
+            <div class="body-parts">
+                <label for="uppercase" id="pw-uppercase">Contains uppercase Letters</label>
+                <input type="checkbox" id="uppercase">
+            </div>
+            <div class="body-parts">
+                <label for="lowerrcase" id="pw-lowercase">Contains Lowercase Letters</label>
+                <input type="checkbox" id="lowercase">
+            </div>
+            <div class="body-parts">
+                <label for="number" id="pw-number">Contains Numbers</label>
+                <input type="checkbox" id="number">
+            </div>
+            <div class="body-parts">
+                <label for="symbol" id="pw-symbol">Contains Symbols</label>
+                <input type="checkbox" id="symbol">
+            </div>
+            </div>
+            <div class="footer">
+                <button type="button" id="btn">Generate Password</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
